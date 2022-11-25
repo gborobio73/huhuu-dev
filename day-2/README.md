@@ -173,7 +173,7 @@ Should look like this
 Flow layout <https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flow_Layout/Block_and_Inline_Layout_in_Normal_Flow>
 
 - Position
-<https://developer.mozilla.org/en-US/docs/Web/CSS/positio
+<https://developer.mozilla.org/en-US/docs/Web/CSS/position>
 
 - Open [boxes.html](../day-2/baseline/public/boxes.html) in your editor and browser; let's move things around!
  

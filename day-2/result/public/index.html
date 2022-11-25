@@ -4,41 +4,31 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Welcome to Huhuu</title>
-
     <style>
-      /* HTML element selector */
-      
+      * {
+        border: 1px solid grey;
+      }
       header {
-        background-color: tomato;
+        background-color: lightsalmon;
       }
-
       nav {
-        background-color: pink;
+        background-color: lightpink;
       }
-
       section {
-        background-color: aquamarine;
+        display: inline-block;
       }
-
       .left-section {
         background-color: lightgreen;
       }
       .right-section {
         background-color: lightgreen;
       }
-
       footer {
         background-color: lightsteelblue;
-        position: fixed;
+        position: absolute;
         bottom: 0px;
       }
-   
-      * {
-        border: 2px solid black;
-      }
-
     </style>
-
   </head>
   <body>
     <header>
@@ -57,11 +47,12 @@
         <article> This is the first article</article>
         <article> This is the second article</article>
       </section>
-      
+
       <section class="right-section">
         This is the right section
       </section>
     </main>
+
     <footer>
       This is the footer
     </footer>
