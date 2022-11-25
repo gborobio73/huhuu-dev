@@ -21,6 +21,14 @@ fs.readFile("."+req.url, function(err, data){
 });
 ```
 
+- Update `server.js` so we can configure the port:
+
+```js
+const port = process.env.PORT || 8080
+server.listen(port)
+console.log(`server listening on port ${port}`)
+```
+
 - move all the html files to a `public` folder and teh server to a `src` folder, so it looks like this
 
 ```shell
@@ -35,7 +43,7 @@ fs.readFile("."+req.url, function(err, data){
 
 Remember to update `server.js` to read files from `/public` now
 
-- Make sure that everything works fine by restarting the server `node src/server.js`
+- Make sure that everything works fine by restarting the server `PORT=8080 node src/server.js`
 
 ## HTML elements, styling and positioning
 
