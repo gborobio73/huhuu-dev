@@ -4,10 +4,6 @@
 
 <https://astro.build/>
 
-### Markdown files
-
-<https://daringfireball.net/projects/markdown/>
-
 ### Install Astro Build
 
 Inside `baseline` folder and run
@@ -46,12 +42,24 @@ npm run dev
 
 ### Markdown files
 
+Markdown format <https://daringfireball.net/projects/markdown/>
+
 Create a folder `news` under `pages` folder. Then create a file with name `news-20221201.md` and copy the contents from `baseline/news-20221201.md`
 
-Refresh the browser and see changes.
+Go to <http://localhost:3000/news/news-20221201> and see the news.
 
-#### Layouts
-Create a `NewsLayout.astro` under layouts folder and copy contents from `baseline/NewsLayout.astro`
+### Layouts
+
+Create a `NewsLayout.astro` under layouts folder and copy contents from `baseline/NewsLayout.astro`.
+
+Add the layout to the `news-20221201.md`
+
+```shell
+---
+layout: ../../layouts/NewsLayout.astro
+title: Editorial news
+---
+```
 
 Refresh the browser and see changes.
 
@@ -71,12 +79,12 @@ Add some styling. Replace layout's `<style is:global></style>` by
 
 Refresh the browser and see changes.
 
-Add author and date to the md file in the header section
+Add author and date to the `news-20221201.md` file in the header section
 
-```md
+```shell
 ---
 title: Hello, World
-author: "Me"
+author: "Gonzalo"
 date: "01 Dec 2022"
 ---
 ```
@@ -108,7 +116,7 @@ Then add it to the layout
 
 Refresh the browser and see changes.
 
-#### More about Markdown
+### More about Markdown
 
 <https://docs.astro.build/en/guides/markdown-content/>
 
