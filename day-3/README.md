@@ -115,6 +115,7 @@ Add some styling. Replace layout's `<style is:global></style>` by
   html {
     font-family: system-ui, sans-serif;
     background-color: black;
+    color: white;
   }
   h1 {
     color: red;
