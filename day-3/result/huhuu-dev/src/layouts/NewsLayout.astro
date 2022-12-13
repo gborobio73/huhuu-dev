@@ -1,0 +1,43 @@
+---
+export interface Props {
+  title: string;
+  author: string;
+  date: string;
+  count: null;
+}
+
+const { frontmatter } = Astro.props;
+
+import "../styles/base.css";
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter.title}</title>
+  </head>
+  <body>
+    <span>{frontmatter.date}</span> by <span>{frontmatter.author}</span>
+    <br />
+    <span>{frontmatter.count}</span>
+    <slot />
+  </body>
+  <style is:global>
+    /* @tailwind base;
+    @layer base {
+      h1 {
+        @apply text-2xl;
+      }
+      h2 {
+        @apply text-xl;
+      }
+      ul {
+        @apply list-disc list-inside;
+      }
+    } */
+  </style>
+</html>
