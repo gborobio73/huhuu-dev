@@ -55,8 +55,8 @@ So, here's my suggestion on how to integrate tailwind:
     @tailwind components;
     @tailwind utilities;
 
+    /* here we change the defaults */
     @layer base {
-    // here we change the defaults
     h1 {
         @apply text-2xl;
     }
